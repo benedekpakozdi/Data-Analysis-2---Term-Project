@@ -6,7 +6,8 @@ from stargazer.stargazer import Stargazer
 
 
 
-df = pn.read_csv("CAR DETAILS FROM CAR DEKHO.csv")
+df = pn.read_csv("https://raw.githubusercontent.com/benedekpakozdi/Data-Analysis-2---Term-Project/refs/heads/main/CAR%20DETAILS%20FROM%20CAR%20DEKHO.csv")
+# df = pn.read_csv("CAR DETAILS FROM CAR DEKHO.csv")
 
 #lets check the variables dependent: Price
 
@@ -418,3 +419,4 @@ html5 = stargazer5.render_html()
 
 with open("regression_table_robostness2.html", "w", encoding="utf-8") as f:
     f.write(html5)
+
